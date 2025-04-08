@@ -325,7 +325,7 @@ p {
 
 /*-------------- Header section css start ----------*/
 /* loader-css */
-.ayur-loader {
+/* .ayur-loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -341,7 +341,7 @@ p {
 
 .ayur-loader img {
   width: 80px;
-}
+} */
 
 /* loader css end */
 /* navmenu css start */
@@ -3403,3 +3403,282 @@ tr.ayur-cartsubtotal td {
   }
 }
 
+/* ------------ Sports Message -------------- */
+
+.sports-massage-section {
+  padding: 60px 20px;
+}
+
+.massage-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.massage-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.massage-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  
+}
+
+.massage-description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.massage-description h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ayur-heading-color);
+  margin-bottom: 10px;
+}
+
+.massage-description p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--ayur-para-color);
+  font-family: "Nunito", sans-serif;
+  text-align: justify;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .massage-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .massage-description {
+    padding: 0 10px;
+  }
+}
+
+
+/* Sports Massage Section Base Styling */
+/* Unique Section Styles */
+#sports-massage-section {
+  color: #333;
+}
+
+.sports-massage-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--ayur-heading-color);
+  margin-bottom: 10px;
+}
+
+.sports-massage-description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--ayur-para-color);
+  font-family: "Nunito", sans-serif;
+  text-align: justify;
+}
+
+.sports-massage-image {
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+
+.sports-massage-highlight h5 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ayur-banheading-color);
+}
+
+.sports-massage-highlight p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--ayur-para-color);
+  font-family: "Nunito", sans-serif;
+  text-align: justify;
+}
+
+
+/* Base Styling */
+#experience-certificate-section {
+  padding: 4rem 1rem;
+}
+
+.certificate-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.certificate-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.certificate-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.certificate-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-image img {
+  width: 100%;
+  height: 400px; /* Increased height for better visibility */
+  object-fit: contain; /* Ensures the image scales proportionally within the height */
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certificate-container {
+    padding: 1.5rem;
+  }
+
+  .certificate-title {
+    font-size: 1.75rem;
+  }
+
+  .certificate-description {
+    font-size: 1rem;
+  }
+
+  .certificate-image img {
+    height: 300px; /* Reduced height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-title {
+    font-size: 1.5rem;
+  }
+
+  .certificate-description {
+    font-size: 0.875rem;
+  }
+
+  .certificate-image img {
+    height: 250px; /* Adjusted height for very small screens */
+  }
+}
+
+
+ /* ------------- Player Section Olympics ---------------- */
+
+
+/* Athletes Section Styling */
+.athletes-container {
+  padding: 3rem 1rem;
+}
+
+.athletes-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1d4331;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--ayur-para-color);
+  font-family: "Nunito", sans-serif;
+  text-align: justify;
+  margin: 2rem;
+}
+
+.athletes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.athletes-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.athletes-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1d4331;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-content span {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #82b104;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.closing-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1d4331;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
